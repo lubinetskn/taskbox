@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@storybook/addon-knobs": "^5.1.3",
+    "core-ui__i18n": "3.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
     "react-scripts": "3.0.1",
-    "redux": "^4.0.1",
-    "storybook-chromatic": "^1.3.3"
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,8 +35,13 @@
     ]
   },
   "devDependencies": {
+    "storybook-addon-versions": "^0.4.3",
+    "storybook-chromatic": "^1.3.3",
     "@storybook/addon-actions": "^5.1.3",
+    "@storybook/addon-info": "^5.1.3",
+    "@storybook/addon-knobs": "^5.1.3",
     "@storybook/addon-links": "^5.1.3",
+    "@storybook/addon-notes": "^5.1.3",
     "@storybook/addon-storyshots": "^5.1.3",
     "@storybook/addons": "^5.1.3",
     "@storybook/react": "^5.1.3",

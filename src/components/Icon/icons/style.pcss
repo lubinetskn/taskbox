@@ -1,0 +1,93 @@
+:local {
+
+    .svg {
+        fill: #047455;
+
+        &_danger {
+            fill: #b21917;
+        }
+
+        &_warning {
+            fill: #f07e1b;
+        }
+
+        &_grey {
+            fill: #666666;
+        }
+
+        &_lightgreen {
+            fill: #0ca650;
+        }
+
+        &_outline {
+            fill: #949494;
+        }
+
+        &_email {
+            clip-rule: evenodd;
+            fill-rule: evenodd;
+        }
+
+        & > g {
+            fill: #ffffff;
+        }
+
+        &_viber {
+            fill: #7b539d;
+        }
+
+        &_telegram {
+            fill: #2fa6da;
+        }
+
+        &_video-play,
+        &_video-pause {
+
+            & > circle {
+                fill: #0ca650;
+            }
+
+            & > path {
+                fill: #fff;
+            }
+
+        }
+
+        &_red-card {
+
+            path {
+                fill-rule: evenodd;
+                fill: rgb(179, 8, 8);
+            }
+
+            text {
+                fill: #fff;
+                font-size: inherit;
+            }
+
+        }
+
+        &_return {
+            fill: #e18c44;
+        }
+
+        &_video_review {
+
+            rect {
+                fill: #fff;
+            }
+
+            path {
+                fill: #a5a4a4;
+            }
+
+            line,
+            circle,
+            polygon {
+                fill: none;
+                stroke: #a5a4a4;
+                stroke-miterlimit: 10;
+            }
+        }
+    }
+}
