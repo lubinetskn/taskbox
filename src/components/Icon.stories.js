@@ -1,22 +1,17 @@
 import React from 'react';
 
 import { TooltipLinkList } from '@storybook/components';
-import ListItemIcon from './icon/example.js';
+import { Icons } from '@storybook/components';
 
 export default {
-  component: ListItemIcon,
+  component: Icons,
   title: 'UI|Sidebar/ListItemIcon',
 };
 
 export const all = () => (
   <TooltipLinkList
     links={[
-      { title: 'has icon', left: <ListItemIcon icon="check" /> },
-      {
-        title: 'has imgSrc',
-        left: <ListItemIcon imgSrc="https://via.placeholder.com/20" />,
-      },
-      { title: 'has neither', left: <ListItemIcon /> },
+      { title: 'has icon', left: <Icons icon="check" /> }
     ]}
   />
 );

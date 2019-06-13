@@ -2,13 +2,11 @@ import PropTypes from 'prop-types'
 import React, { PureComponent } from 'react';
 import classNames from 'classnames/bind';
 
-import Loader from 'lib-ui__loader/circle';
-import I18n from 'core-ui__i18n';
+import I18n, { isConstant }  from 'core-ui__i18n';
 import Done from 'lib-ui__icons/icons/done';
 import DangerWarning from 'lib-ui__icons/icons/danger-warning';
 import WarningIcon from 'lib-ui__icons/icons/warning';
 import CircleInfo from 'lib-ui__icons/icons/circle-info';
-import { isConstant } from 'lib-ui__helper';
 
 import style from './style'
 
@@ -57,9 +55,6 @@ class Warning extends PureComponent {
         switch(this.props.iconType) {
             case 'info':
                 icon = <CircleInfo {...iconProps} />;
-                break;
-            case 'loader':
-                icon = <Loader {...iconProps} />;
                 break;
             case 'error':
                 icon = <DangerWarning {...iconProps} />;
