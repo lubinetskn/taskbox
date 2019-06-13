@@ -1,0 +1,37 @@
+.heading {
+  font-weight: 400;
+  box-sizing: border-box;
+  color: #000;
+  padding: 8px 0;
+}
+.heading_h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.heading_h2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.heading_h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.heading_h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.heading_h5 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.heading_h6 {
+  font-size: 10px;
+  line-height: 16px;
+}

@@ -1,13 +1,22 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import Icon from './Icon/index';
-console.log(Icon);
+// import React from 'react';
 
-storiesOf('Icon', module).add('default', () => {
-  console.log(Icon);
-  Icon.map(elem => {
-    console.log(elem);
+// import { TooltipLinkList } from '@storybook/components';
+// import ListItemIcon from './Icon/example';
 
-    //return <img src={Object.keys(elem)} />;
-  });
-});
+// export default {
+//   component: ListItemIcon,
+//   title: 'UI|Sidebar/ListItemIcon',
+// };
+
+// export const all = () => (
+//   <TooltipLinkList
+//     links={[
+//       { title: 'has icon', left: <ListItemIcon icon="check" /> },
+//       {
+//         title: 'has imgSrc',
+//         left: <ListItemIcon imgSrc="https://via.placeholder.com/20" />,
+//       },
+//       { title: 'has neither', left: <ListItemIcon /> },
+//     ]}
+//   />
+// );

@@ -1,0 +1,40 @@
+@import "../../vars.pcss";
+
+:local {
+
+    .notification {
+        position: fixed;
+        left: var(--left-sidebar-width);
+        right: var(--right-sidebar-width);
+        width: auto;
+        margin-top: -16px;
+        text-align: center;
+        opacity: 0.8;
+
+        &__text-wrapper {
+            display: block;
+            text-align: left;
+        }
+
+        &_entering {
+            animation: show forwards 0.5s;
+        }
+
+        &_exiting {
+            animation: show forwards reverse 0.1s;
+        }
+    }
+}
+
+@keyframes :local(show) {
+
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: none;
+        opacity: 0.8;
+    }
+}
