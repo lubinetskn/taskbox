@@ -5,9 +5,9 @@ import { CSSTransition } from 'react-transition-group';
 
 import I18n, { isConstant } from 'core-ui__i18n';
 
-import Warning from 'component/warning';
+import Warning from '../warning';
 
-import style from './style';
+import style from './style.pcss';
 
 const cx = classNames.bind(style);
 

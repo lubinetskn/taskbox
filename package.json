@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "react-transition-group": "2.x.x",
+    "lib-ui__icons": "2.4.0",
     "core-ui__i18n": "3.0.1",
     "classnames": "2.x.x",
     "react": "^16.8.6",

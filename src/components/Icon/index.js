@@ -1,8 +1,8 @@
-export const Android = './icons/android.svg';
-export const ArrowDown = './icons/arr-down.svg';
-export const ArrowLeft = './icons/arr-left.svg';
-export const ArrowRight = './icons/arr-right.svg';
-export const ArrowUp = './icons/arr-up.svg';
+ const Android = './icons/android.svg';
+ const ArrowDown = './icons/arr-down.svg';
+ const ArrowLeft = './icons/arr-left.svg';
+ const ArrowRight = './icons/arr-right.svg';
+ const ArrowUp = './icons/arr-up.svg';
 // export const ArrowFull = require('./icons/arrow-full').default;
 // export const ArrowMenu = require('./icons/arrow-menu').default;
 // export const Card = require('./icons/card').default;

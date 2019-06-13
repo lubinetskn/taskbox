@@ -1,0 +1,80 @@
+:local {
+
+    .warning {
+        padding: 8px 8px 8px 0;
+        margin: 16px 0;
+        display: flex;
+        flex-shrink: 0;
+        align-items: flex-start;
+        font-size: 14px;
+        justify-content: center;
+        min-height: 40px;
+        width: 100%;
+        color: #000;
+        box-sizing: border-box;
+        border-radius: 4px;
+        line-height: 20px;
+
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            margin: 2px 0;
+            word-break: break-word;
+        }
+
+        &[data-nested="true"] {
+            border-radius: 0;
+        }
+
+        & p {
+            font-size: 14px;
+        }
+
+        & a {
+            color: #009b69;
+        }
+
+        &_warning {
+            background-color: #fff2e5;
+            fill: #ff7f00;
+        }
+
+        &_error {
+            background-color: #fae6e6;
+            fill: #d90000;
+        }
+
+        &_info,
+        &_loader {
+            background-color: #fffcf2;
+            fill: #009b69;
+        }
+
+        &_success {
+            background-color: #e8ffee;
+            fill: #54bf00;
+        }
+
+        &__icon {
+            width: 20px;
+            height: 20px;
+            margin: 2px 12px;
+            flex-shrink: 0;
+
+            & > g {
+                fill: #fff;
+            }
+        }
+
+        &_error,
+        &_info,
+        &_success,
+        &_warning {
+
+            g {
+                fill: #fff;
+            }
+        }
+    }
+}

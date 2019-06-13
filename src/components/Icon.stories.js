@@ -1,22 +1,22 @@
-// import React from 'react';
+import React from 'react';
 
-// import { TooltipLinkList } from '@storybook/components';
-// import ListItemIcon from './Icon/example';
+import { TooltipLinkList } from '@storybook/components';
+import ListItemIcon from './icon/example.js';
 
-// export default {
-//   component: ListItemIcon,
-//   title: 'UI|Sidebar/ListItemIcon',
-// };
+export default {
+  component: ListItemIcon,
+  title: 'UI|Sidebar/ListItemIcon',
+};
 
-// export const all = () => (
-//   <TooltipLinkList
-//     links={[
-//       { title: 'has icon', left: <ListItemIcon icon="check" /> },
-//       {
-//         title: 'has imgSrc',
-//         left: <ListItemIcon imgSrc="https://via.placeholder.com/20" />,
-//       },
-//       { title: 'has neither', left: <ListItemIcon /> },
-//     ]}
-//   />
-// );
+export const all = () => (
+  <TooltipLinkList
+    links={[
+      { title: 'has icon', left: <ListItemIcon icon="check" /> },
+      {
+        title: 'has imgSrc',
+        left: <ListItemIcon imgSrc="https://via.placeholder.com/20" />,
+      },
+      { title: 'has neither', left: <ListItemIcon /> },
+    ]}
+  />
+);
