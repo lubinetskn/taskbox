@@ -1,0 +1,379 @@
+@import "../../vars.pcss";
+
+:local {
+
+    input {
+
+        &[type="radio"] {
+            margin-right: 8px;
+            display: inline-block;
+        }
+    }
+
+    .input {
+        box-sizing: border-box;
+        border: none;
+        height: 32px;
+        outline: none;
+        padding: 0 30px 0 8px;
+        flex-grow: 1;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #010202;
+        margin-top: -5px;
+        width: 100%;
+        box-shadow: none;
+
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.25);
+        }
+
+        &:focus {
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+
+        &__description,
+        &__error {
+            display: block;
+            font-size: 12px;
+            color: #777;
+            line-height: 14px;
+            padding-top: 12px;
+            width: 100%;
+        }
+
+        &__error {
+            padding: 10px;
+            position: absolute;
+            width: 160px;
+            box-sizing: border-box;
+            background: #fff;
+            font-weight: lighter;
+            border: 1px solid #e25458;
+            color: #010202;
+            min-height: 38px;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            top: 16px;
+            flex-wrap: wrap;
+
+            &_warning {
+                border: 1px solid #f9a94b;
+            }
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+            }
+
+            &::before {
+                border: 9px solid transparent;
+                top: 8px;
+            }
+
+            &::after {
+                border: 9px solid transparent;
+                top: 8px;
+            }
+
+            &_left {
+                left: -175px;
+
+                &::before {
+                    right: -18px;
+                    border-left-color: inherit;
+                }
+
+                &::after {
+                    border-left-color: #fff;
+                    right: -17px;
+                }
+            }
+
+            &_right {
+                right: -175px;
+
+                &::before {
+                    left: -18px;
+                    border-right-color: inherit;
+                }
+
+                &::after {
+                    border-right-color: #fff;
+                    left: -17px;
+                }
+            }
+
+            &_bottom {
+                left: 0;
+                top: 57px;
+                width: 100%;
+                max-width: 160px;
+
+                &::before {
+                    left: 50%;
+                    top: -18px;
+                    right: auto;
+                    margin-left: -9px;
+                    border-bottom-color: inherit;
+                }
+
+                &::after {
+                    left: 50%;
+                    top: -17px;
+                    right: auto;
+                    margin-left: -9px;
+                    border-bottom-color: #fff;
+                }
+            }
+        }
+
+        &__label {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #000;
+            align-items: flex-start;
+            box-sizing: border-box;
+            position: relative;
+            width: 280px;
+
+            &_radio {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &__fieldset {
+            width: 100%;
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0;
+            border: 1px solid #bebebe;
+            position: relative;
+
+            &_invalid {
+                border-color: var(--input__invalid);
+            }
+
+            &_valid {
+                border-color: var(--input__valid);
+            }
+        }
+
+        &__legend {
+            margin-left: 5px;
+            font-weight: normal;
+            line-height: 1;
+            box-sizing: border-box;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding: 0 5px;
+            font-size: 12px;
+            color: #969696;
+            z-index: 1;
+            position: relative;
+
+            &_valid {
+                color: var(--input__valid);
+            }
+
+            &_invalid {
+                color: var(--input__invalid);
+            }
+        }
+    }
+
+    .textarea {
+        font-family: "Roboto Condensed", Arial, sans-serif;
+        font-size: 16px;
+        margin: -5px 0 -4px;
+        resize: none;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        padding: 8px;
+        flex-grow: 1;
+        letter-spacing: 1px;
+        color: #010202;
+        width: 100%;
+        box-shadow: none;
+
+        &__label {
+            width: 100%;
+
+            &_valid {
+                border-color: var(--input__valid);
+            }
+
+            &_invalid {
+                border-color: var(--input__invalid);
+            }
+        }
+
+        &__fieldset {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+            border: 1px solid #bebebe;
+            position: relative;
+
+            &_invalid {
+                border-color: var(--input__invalid);
+            }
+
+            &_valid {
+                border-color: var(--input__valid);
+            }
+        }
+
+        &__legend {
+            margin-left: 5px;
+            font-weight: normal;
+            line-height: 1;
+            box-sizing: border-box;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding: 0 5px;
+            font-size: 12px;
+            color: #969696;
+            z-index: 1;
+            position: relative;
+
+            &_valid {
+                color: var(--input__valid);
+            }
+
+            &_invalid {
+                color: var(--input__invalid);
+            }
+        }
+
+        &__error {
+            font-size: 12px;
+            padding: 10px;
+            position: absolute;
+            width: 160px;
+            box-sizing: border-box;
+            background: #fff;
+            font-weight: lighter;
+            border: 1px solid #e25458;
+            color: #010202;
+            min-height: 38px;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            top: 16px;
+            flex-wrap: wrap;
+
+            &_warning {
+                border: 1px solid #f9a94b;
+            }
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+            }
+
+            &::before {
+                border: 9px solid transparent;
+                top: 8px;
+            }
+
+            &::after {
+                border: 9px solid transparent;
+                top: 8px;
+            }
+
+            &_left {
+                left: -175px;
+
+                &::before {
+                    right: -18px;
+                    border-left-color: inherit;
+                }
+
+                &::after {
+                    border-left-color: #fff;
+                    right: -17px;
+                }
+            }
+
+            &_right {
+                right: -175px;
+
+                &::before {
+                    left: -18px;
+                    border-right-color: inherit;
+                }
+
+                &::after {
+                    border-right-color: #fff;
+                    left: -17px;
+                }
+            }
+
+            &_bottom {
+                left: 0;
+                top: 130px;
+                width: 100%;
+                max-width: 160px;
+
+                &::before {
+                    left: 50%;
+                    top: -18px;
+                    right: auto;
+                    margin-left: -9px;
+                    border-bottom-color: inherit;
+                }
+
+                &::after {
+                    left: 50%;
+                    top: -17px;
+                    right: auto;
+                    margin-left: -9px;
+                    border-bottom-color: #fff;
+                }
+            }
+        }
+    }
+
+    .radio-group {
+        margin-top: 16px;
+        width: 100%;
+
+        &__title {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        &__button-label {
+            display: flex;
+            align-items: center;
+
+            &:first-of-type {
+                margin-right: 24px;
+            }
+        }
+    }
+}

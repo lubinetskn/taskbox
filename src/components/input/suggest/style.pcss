@@ -1,0 +1,110 @@
+@import "../../../vars.pcss";
+
+:local {
+
+    .input-with-suggest {
+        margin-top: 8px;
+        position: relative;
+        width: 100%;
+
+        &__input-label {
+            width: 100%;
+        }
+
+        &__input-fieldset {
+
+            &_valid {
+                border-color: var(--input__valid);
+            }
+        }
+
+        &__input-legend {
+
+            &_valid {
+                color: var(--input__valid);
+            }
+        }
+
+        &__suggestion-list {
+            box-sizing: border-box;
+            width: 100%;
+            top: 46px;
+            position: absolute;
+            box-shadow: 1px 4px 4px #777;
+            border-radius: 0;
+            background-color: #fff;
+            padding: 0 8px;
+            z-index: 2;
+
+            &_empty {
+                color: #777;
+                padding: 8px;
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+
+        &__suggestion {
+            cursor: pointer;
+            display: flex;
+            min-height: 32px;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            font-size: 12px;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+
+        &__address-summary {
+            margin-top: 8px;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        &__address-summary-row {
+            margin-bottom: 4px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__address-summary-row-title {
+            color: #777;
+            margin-right: 4px;
+        }
+
+        &__no-flat-checkbox {
+
+            &[type="checkbox"] {
+                margin: 0 4px 0 16px;
+                min-width: 16px;
+                min-height: 16px;
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+
+                &:checked {
+                    background-size: 12px;
+                }
+            }
+        }
+
+        &__no-flat-label {
+            font-size: 12px;
+        }
+
+        &__did-you-mean {
+            font-size: 14px;
+            margin-right: 4px;
+
+            & + span {
+                font-size: 14px;
+                color: var(--brand-color_regular);
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+@import "../../vars.pcss";
+
+:local {
+
+    .file-input {
+
+        &__input {
+            display: none;
+            margin: 8px 0;
+        }
+
+        &__file-input-group {
+            font-size: 14px;
+            width: 280px;
+        }
+
+        &__file-input-title {
+            color: #555555;
+        }
+
+        &__fake-input {
+            display: flex;
+            margin: 8px 0;
+            width: 100%;
+        }
+
+        &__button {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            width: 112px;
+            font-size: 12px;
+            height: 32px;
+            outline: none;
+            border: none;
+            background-color: var(--brand-color-light-green);
+
+            &_disabled {
+                cursor: default;
+                color: rgba(0, 0, 0, 0.25);
+            }
+
+            &:not(:disabled):hover {
+                background-color: var(--brand-color_hover);
+            }
+        }
+
+        &__clip-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+        }
+
+        &__button-text {
+            display: inline-block;
+            line-height: 32px;
+            width: 80px;
+            height: 32px;
+        }
+
+        &__filename-wrapper,
+        &__file-not-chosen {
+            justify-content: flex-start;
+            position: relative;
+            margin: 0;
+            align-items: center;
+            box-sizing: border-box;
+            width: 168px;
+            height: 32px;
+            min-height: 32px;
+            max-height: 32px;
+            font-size: 14px;
+            padding-left: 8px;
+        }
+
+        &__filename {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 130px;
+            max-width: 130px;
+            min-width: 130px;
+        }
+
+        &__file-not-chosen {
+            display: flex;
+            background-color: #fff;
+        }
+
+        &__file-icon {
+            position: absolute;
+            top: 4px;
+            right: 0;
+        }
+
+        &__file-input-info {
+            color: #777777;
+            font-size: 12px;
+
+            &_error {
+                color: #d90000;
+            }
+        }
+    }
+}

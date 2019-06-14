@@ -1,0 +1,49 @@
+:local {
+
+    & .password-rule {
+
+        &__rule {
+            display: flex;
+            align-items: center;
+            height: 24px;
+            color: #555;
+            font-size: 12px;
+        }
+
+        &__rules {
+            width: 100%;
+            margin-bottom: 9px;
+            margin-top: 3px;
+            box-sizing: border-box;
+        }
+
+        &__icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 12px;
+
+            g {
+                fill: #fff;
+            }
+
+            &_warning {
+                fill: #ff7f00;
+            }
+
+            &_done {
+                fill: #54bf00;
+            }
+        }
+
+        &__wrapper {
+            display: block;
+        }
+
+        &__text {
+            display: block;
+            font-size: 12px;
+            color: #777;
+            margin: 0 15px 8px;
+        }
+    }
+}

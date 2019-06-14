@@ -1,0 +1,44 @@
+:local {
+
+    .ul-list {
+        margin-top: 5px;
+        padding: 0;
+
+        &__item {
+            position: relative;
+            list-style: none;
+            margin-bottom: 15px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: #555555;
+            flex-wrap: wrap;
+        }
+
+        &__inner-item {
+            flex-basis: calc(100% - 50px);
+
+            & > a {
+                color: #009b69;
+            }
+        }
+
+        &__icon {
+            fill: #009b69;
+            min-width: 8px;
+            width: 8px;
+            height: 8px;
+            margin-right: 10px;
+            flex-basis: 8px;
+        }
+
+        &__nodes {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            flex-basis: calc(100% - 50px);
+            margin-left: auto;
+        }
+    }
+}

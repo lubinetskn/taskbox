@@ -2,7 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs/react';
 
-import Input from './Input';
+import Input from './input';
+import FileInput from './file-input';
 
 storiesOf('Input', module)
   .addDecorator(withKnobs)
@@ -25,5 +26,5 @@ storiesOf('Input', module)
     },
   )
   .add('file input', () => {
-    return <Input type="file" />;
+    return <FileInput />;
   });
