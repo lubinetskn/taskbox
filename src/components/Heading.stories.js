@@ -1,5 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-//import Heading from './Heading/index';
+import Heading from './heading';
 
-// storiesOf('Icon', module).add('default', () => <Heading />);
+storiesOf('Heading', module).add('default', () => <Heading />);

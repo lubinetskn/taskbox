@@ -1004,6 +1004,16 @@
   dependencies:
     "@hapi/hoek" "6.x.x"
 
+"@hot-loader/react-dom@^16.8.6":
+  version "16.8.6"
+  resolved "http://repo.app-ses.com:4873/@hot-loader%2freact-dom/-/react-dom-16.8.6.tgz#7923ba27db1563a7cc48d4e0b2879a140df461ea"
+  integrity sha512-+JHIYh33FVglJYZAUtRjfT5qZoT2mueJGNzU5weS2CVw26BgbxGKSujlJhO85BaRbg8sqNWyW1hYBILgK3ZCgA==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.13.6"
+
 "@icons/material@^0.2.4":
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
@@ -6426,6 +6436,11 @@ lib-ui__icons@2.4.0:
   resolved "http://repo.app-ses.com:4873/lib-ui__icons/-/lib-ui__icons-2.4.0.tgz#ff40e50170b6c2d43cefcb830b3a341c1a466768"
   integrity sha512-VmQnyvwIxl2LeqW9fTggg5MwHvzBf+UM4vdYs/oKC0pr6AYVQwI0v3XK31hyNHbf/6HQyezI07RYvxS16GDO8A==
 
+lib-ui__link@4.2.0:
+  version "4.2.0"
+  resolved "http://repo.app-ses.com:4873/lib-ui__link/-/lib-ui__link-4.2.0.tgz#e87c9d00711e0da828e7b2c4353bacadcf13a70b"
+  integrity sha512-8hshj2AroSVa214RvuQArDf919MmMTZCUHwz5ZlDxtfZC/rEQQqNOuzZdUChggRQShhCH3Qc0CnJrIzRs15VcQ==
+
 load-json-file@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-2.0.0.tgz#7947e42149af80d696cbf797bcaabcfe1fe29ca8"
@@ -10123,6 +10138,11 @@ test-exclude@^5.2.3:
 text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
+
+theme-webpack-plugin@^2.0.0:
+  version "2.0.0"
+  resolved "http://repo.app-ses.com:4873/theme-webpack-plugin/-/theme-webpack-plugin-2.0.0.tgz#dbfb3228188c170d77c70a8b58cf6c3bc4c2462f"
+  integrity sha512-payoxJ9d2DiMFkq2GmWUJz29rfLAI/70Xul1ONx91RAL7H642QFLbFBZaRObEwiW9qMxjEhHzKnvHgv8RRtW9Q==
 
 throat@^4.0.0:
   version "4.1.0"

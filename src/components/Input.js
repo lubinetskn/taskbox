@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// import React from 'react';
+// import PropTypes from 'prop-types';
 
-import { TooltipLinkList, Icons } from '@storybook/components';
+// import { TooltipLinkList, Icons } from '@storybook/components';
 
-console.log(TooltipLinkList); 
-console.log(Icons); 
+// console.log(TooltipLinkList);
+// console.log(Icons);
 
-export default function Input({ type = '', ...props }) {
-  return <input type={type} {...props} />;
-}
+// export default function Input({ type = '', ...props }) {
+//   return <input type={type} {...props} />;
+// }
 
-Input.propTypes = {
-  type: PropTypes.string,
-};
+// Input.propTypes = {
+//   type: PropTypes.string,
+// };
