@@ -1,0 +1,136 @@
+:local {
+
+    .form-input {
+
+        &__label {
+            width: 100%;
+            margin: 16px 0 0;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        &__title {
+            font-weight: normal;
+            display: block;
+            line-height: 16px;
+            box-sizing: border-box;
+            font-size: 12px;
+            margin: 4px 0;
+            color: #777;
+
+            &_link {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &__restore-password {
+            color: #009b69;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__description,
+        &__error {
+            display: block;
+            font-size: 12px;
+            color: #777;
+            line-height: 16px;
+            padding-top: 4px;
+            width: 100%;
+        }
+
+        &__error {
+            color: #d90000;
+            display: flex;
+            flex-wrap: nowrap;
+
+            & > svg {
+                fill: currentColor;
+                width: 16px;
+                height: 16px;
+                flex-shrink: 0;
+                margin-right: 4px;
+            }
+        }
+
+        &__input {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #000;
+            font-size: 16px;
+            height: 32px;
+            padding: 0 8px;
+            box-sizing: border-box;
+            box-shadow: inset 0 0 0 50px #fff;
+
+            &:valid {
+                border-color: #008900;
+            }
+
+            &:required {
+                box-shadow: none;
+            }
+
+            &_custom {
+
+                &:valid {
+                    border-color: #d0d0d0;
+                }
+            }
+
+            &[data-watch="true"] {
+
+                &:invalid {
+                    border-color: #d90000;
+                }
+            }
+
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.25);
+            }
+
+            &:-webkit-autofill {
+                box-shadow: inset 0 0 0 50px #fff;
+            }
+        }
+
+        &__password-wrapper {
+            position: relative;
+            width: 100%;
+
+            & input {
+                width: 100%;
+                padding-right: 30px;
+            }
+        }
+
+        &__password-eye {
+            z-index: 1;
+            position: absolute;
+            display: flex;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 30px;
+            height: 100%;
+            padding: 5px 8px;
+            box-sizing: border-box;
+            fill: #009a6c;
+            cursor: pointer;
+
+            &:hover {
+                fill: #007354;
+            }
+        }
+
+        &__password-icon {
+            margin: auto;
+            fill: #009a6c;
+        }
+    }
+}

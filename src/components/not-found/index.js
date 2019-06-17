@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames/bind';
 import I18n from 'core-ui__i18n';
 
-import Heading from '../component/heading';
+import Heading from '../heading';
 
 import notFoundImage from './img/not-found.svg';
 
@@ -21,29 +21,29 @@ const NotFound = () => (
       />
       <div className={cx('not-found__text-block')}>
         <Heading className={cx('not-found__heading')}>
-          TK_NOT-FOUND__HEADING
+          Страница не найдена	
         </Heading>
         <Heading className={cx('not-found__header-text')} tagName="h2">
-          TK_NOT-FOUND__TEXT-HEADER
+          Этой странице	
           <I18n className={cx('not-found__header-span')}>
-            TK_NOT-FOUND__TEXT-HEADER_PART-2
+            «требуется замена»	
           </I18n>
         </Heading>
         <div className={cx('not-found__text-block')}>
           <Heading tagName="h4" className={cx('not-found__error-header')}>
-            TK_NOT-FOUND__ERROR-TEXT
+            Ошибка 404	
           </Heading>
           <I18n tagName="p" className={cx('not-found__text')}>
-            TK_NOT-FOUND__TEXT-BLOCK-1
+          К сожалению, запрашиваемая Вами страница не найдена на сайте нашей компании.
           </I18n>
           <I18n tagName="p" className={cx('not-found__text')}>
-            TK_NOT-FOUND__TEXT-BLOCK-2
+            К счастью, все остальные страницы сайта более чем доступны.
           </I18n>
         </div>
       </div>
     </div>
     <I18n tagName="p" className={cx('not-found__bottom-text')}>
-      TK_NOT-FOUND__BOTTOM-TEXT
+    Если ассистент судьи двумя руками держит флаг над головой, то он сообщает о происходящей замене и о том, что игру следует возобновлять только после выполнения замены.
     </I18n>
   </div>
 );

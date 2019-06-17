@@ -1,7 +1,7 @@
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 html,
 body {
   margin: 0;
@@ -192,19 +192,6 @@ textarea {
   word-break: break-word;
   hyphens: auto;
 }
-.type-light {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-}
-.type-bold {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
-}
-.type-italic {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -220,7 +207,7 @@ select {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
   font-style: 400;
   color: #333;
   font-size: 16px;
@@ -232,7 +219,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: 400;
   margin: 0;
   padding: 0;
@@ -288,7 +275,7 @@ input[type='password'],
 textarea {
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: 400;
   padding: 0.75rem 0;
   line-height: 1.5rem !important;
@@ -818,7 +805,7 @@ a:focus {
   letter-spacing: 0.3em;
   text-indent: 0.3em;
   text-transform: uppercase;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
   font-size: 11px;
   padding-left: 15px;
@@ -954,7 +941,7 @@ a:focus {
 .wrapper-message .title-message {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: #555;
 }
@@ -988,7 +975,7 @@ a:focus {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: #1c3f53;
   display: inline-block;

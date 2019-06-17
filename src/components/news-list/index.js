@@ -6,8 +6,8 @@ import Link from 'lib-ui__link';
 import I18n from 'core-ui__i18n';
 import { ArrowLeft, ArrowEnd, ArrowStart, ArrowRight } from 'lib-ui__icons';
 
-import Heading from 'component/heading';
-import { formatDate } from 'component/helpers/formatDate';
+import Heading from '../heading';
+import { formatDate } from '../helpers/formatDate';
 
 import style from './style';
 

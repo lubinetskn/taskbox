@@ -67,6 +67,6 @@ export default {
   ArrowUp,
   ArrowFull, ArrowMenu, Card, ChangeBase, ChangeOdds, Circle, Close, Coupon, Chat, DangerWarning, DefSumm, Delay, Delete,
   Deposit, Desktop, Done, Email, Face, Gift,
-  Heart, Home, Info, Ios, Logo, Logout, Lock, Menu, Mobile, MyAccount, MyStakes, Ok, Pin, Quick, Reload, Search, Settings, StarFilled, StarOutline, Statement,
-  Text, Telegram, Video, Viber, VisibleOff, VisibleOn, Warning, Widget, Withdraw, FullScreen, MinimizeScreen, VideoPlay, VideoPause, VideoReview, RedCard
+  Heart, Home, Info, Ios, Logout, Lock, Menu, Mobile, MyAccount, MyStakes, Ok, Pin, Quick, Reload, Search, Settings, StarFilled, StarOutline, Statement,
+  Text, Telegram, Video, Viber, VisibleOff, VisibleOn, Warning, Widget, Withdraw, FullScreen, MinimizeScreen,  VideoReview, RedCard, VideoPlay, VideoPause,Logo,
 };

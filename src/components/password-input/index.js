@@ -83,7 +83,7 @@ class PasswordInput extends Component {
             if(params[this.props.newPassName] === currentPass) {
                 this.setState({
                     valid: { [this.props.newPassName]: false },
-                    error: { [this.props.newPassName]: 'TK_PASSWORD-INPUT__WRONG-NEW-PASS' }
+                    error: { [this.props.newPassName]: 'Новый пароль совпадает со старым' }
                 }, this.checkInputsValidity);
             } else {
                 this.setState({
@@ -155,8 +155,8 @@ class PasswordInput extends Component {
             this.setState({
                 error: {
                     ...this.state.error,
-                    [this.props.newPassName]    : 'TK_PASSWORD-INPUT__PASSWORD_REQUIRED',
-                    [this.props.confirmPassName]: 'TK_PASSWORD-INPUT__PASSWORD_REQUIRED'
+                    [this.props.newPassName]    : 'Это поле обязательно для заполнения',
+                    [this.props.confirmPassName]: 'Это поле обязательно для заполнения'
                 },
                 valid: {
                     [this.props.newPassName]    : false,
@@ -170,7 +170,7 @@ class PasswordInput extends Component {
                 return this.setState({
                     error: {
                         ...this.state.error,
-                        [this.props.newPassName]: 'TK_PASSWORD-INPUT__PASSWORD_WRONG'
+                        [this.props.newPassName]: 'Пароль не соответствует всем условиям'
                     }
                 })
             }
@@ -181,7 +181,7 @@ class PasswordInput extends Component {
                 return this.setState({
                     error: {
                         ...this.state.error,
-                        [this.props.newPassName]: 'TK_PASSWORD-INPUT__WRONG-NEW-PASS'
+                        [this.props.newPassName]: 'Новый пароль совпадает со старым'
                     }
                 })
             }
@@ -191,7 +191,7 @@ class PasswordInput extends Component {
             this.setState({
                 error: {
                     ...this.state.error,
-                    [this.props.confirmPassName]: 'TK_PASSWORD-INPUT__PASSWORD_REQUIRED'
+                    [this.props.confirmPassName]: 'Это поле обязательно для заполнения'
                 }
             })
         }
@@ -200,14 +200,14 @@ class PasswordInput extends Component {
             return this.setState({
                 error: {
                     ...this.state.error,
-                    [this.props.newPassName]: 'TK_PASSWORD-INPUT__PASSWORD_MAX-30'
+                    [this.props.newPassName]: 'Максимум 30 символов'
                 }
             })
         }
 
         if(newPass && confirmedPass) {
             if(newPass !== confirmedPass) {
-                return this.setState({ error: { passError: 'TK_PASSWORD-INPUT__PASSWORD_NOT-EQUAL' } })
+                return this.setState({ error: { passError: 'Пароли не совпадают' } })
             }
         }
     };
@@ -232,21 +232,21 @@ class PasswordInput extends Component {
 
             return (
                 <div {...props}>
-                    <I18n tagName="div" className={cx('password-input__rule-header')}>TK_PASSWORD-INPUT__RULE-HEADER</I18n>
+                    <I18n tagName="div" className={cx('password-input__rule-header')}>Требования к паролю</I18n>
                     <div className={cx('password-input__rule-wrap')}>
-                        <I18n data-valid={this.state.passRuleLength} className={cx('password-input__rule')}>TK_PASSWORD-INPUT__RULE-8-30-SYMBOLS</I18n>
+                        <I18n data-valid={this.state.passRuleLength} className={cx('password-input__rule')}>8-30 символов</I18n>
                         <Ok className={cx('password-input__ok-rule')} />
                     </div>
                     <div className={cx('password-input__rule-wrap')}>
-                        <I18n data-valid={this.state.passRuleUpper} className={cx('password-input__rule')}>TK_PASSWORD-INPUT__RULE-UPPERCASE</I18n>
+                        <I18n data-valid={this.state.passRuleUpper} className={cx('password-input__rule')}>Минимум одна заглавная буква	</I18n>
                         <Ok className={cx('password-input__ok-rule')} />
                     </div>
                     <div className={cx('password-input__rule-wrap')}>
-                        <I18n data-valid={this.state.passRuleLow} className={cx('password-input__rule')}>TK_PASSWORD-INPUT__RULE-LOWERCASE</I18n>
+                        <I18n data-valid={this.state.passRuleLow} className={cx('password-input__rule')}>Минимум одна строчная буква</I18n>
                         <Ok className={cx('password-input__ok-rule')} />
                     </div>
                     <div className={cx('password-input__rule-wrap')}>
-                        <I18n data-valid={this.state.passRuleNumber} className={cx('password-input__rule')}>TK_PASSWORD-INPUT__RULE-NUMBERS</I18n>
+                        <I18n data-valid={this.state.passRuleNumber} className={cx('password-input__rule')}>Минимум одна цифра	</I18n>
                         <Ok className={cx('password-input__ok-rule')} />
                     </div>
                 </div>
@@ -295,7 +295,7 @@ class PasswordInput extends Component {
         return (
             <label className={cx('password-input__label', this.props.classNames.inputNew)}>
                 <fieldset className={className}>
-                    <I18n tagName="legend" className={legendClass}>TK_PASSWORD-INPUT__PASS-NEW</I18n>
+                    <I18n tagName="legend" className={legendClass}>Пароль</I18n>
                     <input {...props} />
                     <Ok className={cx('password-input__ok-icon')} />
                     <DangerWarning className={cx('password-input__error-icon')} />
@@ -326,7 +326,7 @@ class PasswordInput extends Component {
         return (
             <label className={cx('password-input__label', this.props.classNames.inputConfirm)}>
                 <fieldset className={className}>
-                    <I18n tagName="legend" className={legendClass}>TK_PASSWORD-INPUT__PASS-NEW-REPEAT</I18n>
+                    <I18n tagName="legend" className={legendClass}>Повторите пароль</I18n>
                     <input {...props} />
                     <Ok className={cx('password-input__ok-icon')} />
                     <DangerWarning className={cx('password-input__error-icon')} />

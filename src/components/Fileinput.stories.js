@@ -2,10 +2,10 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs/react';
 
-import Input from './input';
+import FileInput from './file-input';
 
-storiesOf('Input', module)
+storiesOf('File Input', module)
   .addDecorator(withKnobs)
   .add('Simple', () => {
-    return <Input />;
+    return <FileInput title={'Заголовок'} info={'Подпись'} name={'Name'}/>;
   });

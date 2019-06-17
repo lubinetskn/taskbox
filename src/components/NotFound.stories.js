@@ -2,10 +2,12 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs/react';
 
-import Input from './input';
+import NotFound from './not-found';
 
-storiesOf('Input', module)
+storiesOf('Not Found', module)
   .addDecorator(withKnobs)
   .add('Simple', () => {
-    return <Input />;
+    return (
+      <NotFound />
+    );
   });

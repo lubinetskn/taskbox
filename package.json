@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "react-router-async": "0.7.9",
     "@babel/core": "7.x.x",
     "@babel/plugin-proposal-class-properties": "7.x.x",
     "@babel/plugin-proposal-decorators": "7.x.x",
@@ -48,8 +49,12 @@
     "babel-eslint": "9.x.x",
     "babel-loader": "8.x.x",
     "css-loader": "1.x.x",
+    "core-ui__pure-component": "2.x.x",
     "theme-webpack-plugin": "^2.0.0",
     "extract-css-chunks-webpack-plugin": "^4.5.2",
+    "lodash.uniqueid": "4.x.x",
+    "lib-ui__loader": "2.x.x",
+    "moment": "2.x.x",
     "@storybook/addon-actions": "^5.1.3",
     "@storybook/addon-info": "^5.1.3",
     "@storybook/addon-knobs": "^5.1.3",

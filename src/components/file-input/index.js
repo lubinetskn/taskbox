@@ -33,7 +33,7 @@ class FileInput extends Component {
     className: '',
     title: '',
     info: '',
-    buttonTitle: 'TK_FILE-INPUT__BUTTON-TITLE',
+    buttonTitle: 'Выбрать файл',
     maxSize: MAX_SIZE_LIMIT,
     fileTypes: [],
     disabled: false,
@@ -121,7 +121,7 @@ class FileInput extends Component {
         classNameTextWrapper: cx('file-input__filename'),
         iconType: this.state.error ? 'error' : 'success',
         children: this.state.error
-          ? 'TK_FILE-INPUT__UPLOAD-ERROR'
+          ? 'Файл не загружен'
           : this.state.fileName,
         title: this.state.error ? undefined : this.state.fileName,
       };
@@ -131,7 +131,7 @@ class FileInput extends Component {
       return (
         <I18n
           className={cx('file-input__file-not-chosen')}
-          children="TK_FILE-INPUT__FILE-NOT-CHOSEN"
+          children="Файл не выбран"
         />
       );
     }

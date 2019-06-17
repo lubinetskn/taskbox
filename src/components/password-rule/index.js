@@ -4,7 +4,7 @@ import I18n from 'core-ui__i18n';
 import classNames from 'classnames/bind';
 import { Done, Warning } from 'lib-ui__icons';
 
-import FormInput from 'component/form-input';
+import FormInput from '../form-input';
 
 import style from './style';
 
@@ -63,15 +63,15 @@ class PasswordRules extends Component {
     get elPasswordRules() {
         const rulesData = [
             {
-                text   : 'TK_DESKTOP__PASSWORD-RULE_RULE-8-30-SYMBOLS',
+                text   : 'диапозон 8-30 символов',
                 capture: this.state.passRuleLength
             },
             {
-                text   : 'TK_DESKTOP__PASSWORD-RULE_RULE-UPPERCASE',
+                text   : 'прописные и строчные буквы',
                 capture: this.state.passRuleUpperLow
             },
             {
-                text   : 'TK_DESKTOP__PASSWORD-RULE_RULE-NUMBERS',
+                text   : 'хотя бы одна цифра',
                 capture: this.state.passRuleNumber
             }
         ];

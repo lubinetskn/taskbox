@@ -3,7 +3,7 @@ import React, { PureComponent } from 'react';
 import classNames from 'classnames/bind';
 import Link from 'lib-ui__link';
 
-import Opener from 'component/opener';
+import Opener from '../opener';
 
 import style from './style.pcss';
 
