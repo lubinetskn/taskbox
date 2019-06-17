@@ -39,6 +39,14 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "7.x.x",
+    "@babel/plugin-proposal-class-properties": "7.x.x",
+    "@babel/plugin-proposal-decorators": "7.x.x",
+    "@babel/plugin-syntax-dynamic-import": "7.x.x",
+    "@babel/preset-env": "7.x.x",
+    "@babel/preset-react": "7.x.x",
+    "babel-eslint": "9.x.x",
+    "babel-loader": "8.x.x",
     "theme-webpack-plugin": "^2.0.0",
     "extract-css-chunks-webpack-plugin": "^4.5.2",
     "@storybook/addon-actions": "^5.1.3",
