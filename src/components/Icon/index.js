@@ -1,64 +1,63 @@
- const Android = './icons/android.svg';
- const ArrowDown = './icons/arr-down.svg';
- const ArrowLeft = './icons/arr-left.svg';
- const ArrowRight = './icons/arr-right.svg';
- const ArrowUp = './icons/arr-up.svg';
-// export const ArrowFull = require('./icons/arrow-full').default;
-// export const ArrowMenu = require('./icons/arrow-menu').default;
-// export const Card = require('./icons/card').default;
-// export const ChangeBase = require('./icons/change-base').default;
-// export const ChangeOdds = require('./icons/change-odds').default;
-// export const Circle = require('./icons/circle').default;
-// export const Close = require('./icons/close').default;
-// export const Coupon = require('./icons/coupon').default;
-// export const Chat = require('./icons/chat').default;
-// export const DangerWarning = require('./icons/danger-warning').default;
-// export const DefSumm = require('./icons/def-summ').default;
-// export const Delay = require('./icons/delay').default;
-// export const Delete = require('./icons/delete').default;
-// export const Deposit = require('./icons/deposit').default;
-// export const Desktop = require('./icons/desktop').default;
-// export const Done = require('./icons/done').default;
-// export const Email = require('./icons/email').default;
-// export const Face = require('./icons/face').default;
-// export const Gift = require('./icons/gift').default;
-// export const Heart = require('./icons/heart').default;
-// export const Home = require('./icons/home').default;
-// export const Info = require('./icons/info').default;
-// export const Ios = require('./icons/ios').default;
-// export const Logo = require('./icons/logo').default;
-// export const Logout = require('./icons/logout').default;
-// export const Lock = require('./icons/lock').default;
-// export const Menu = require('./icons/menu').default;
-// export const Mobile = require('./icons/mobile').default;
-// export const MyAccount = require('./icons/my-account').default;
-// export const MyStakes = require('./icons/my-stakes').default;
-// export const Ok = require('./icons/ok').default;
-// export const Pin = require('./icons/pin').default;
-// export const Quick = require('./icons/quick').default;
-// export const Reload = require('./icons/reload').default;
-// export const Search = require('./icons/search').default;
-// export const Settings = require('./icons/settings').default;
-// export const StarFilled = require('./icons/star-filled').default;
-// export const StarOutline = require('./icons/star-outline').default;
-// export const Statement = require('./icons/statement').default;
-// export const Text = require('./icons/text').default;
-// export const Telegram = require('./icons/telegram').default;
-// export const Video = require('./icons/video').default;
-// export const Viber = require('./icons/viber').default;
-// export const VisibleOff = require('./icons/visible-off').default;
-// export const VisibleOn = require('./icons/visible-on').default;
-// export const Warning = require('./icons/warning').default;
-// export const Widget = require('./icons/widget').default;
-// export const Withdraw = require('./icons/withdraw').default;
-// export const FullScreen = require('./icons/full-screen').default;
-// export const MinimizeScreen = require('./icons/minimize-screen').default;
-// export const VideoPlay = require('./icons/video-play').default;
-// export const VideoPause = require('./icons/video-pause').default;
-// export const Return = require('./icons/return').default;
-// export const VideoReview = require('./icons/video-review').default;
-// $FlowFixMe
-// export const RedCard = require('./icons/red-card').default;
+import Android from './icons/android.svg';
+import ArrowDown from './icons/arr-down.svg';
+import ArrowLeft from './icons/arr-left.svg';
+import ArrowRight from './icons/arr-right.svg';
+import ArrowUp from './icons/arr-up.svg';
+import ArrowFull from './icons/arrow-full.svg';
+import ArrowMenu from './icons/arrow-menu.svg';
+import Card from './icons/card.svg';
+import ChangeBase from './icons/change-base.svg';
+import ChangeOdds from './icons/change-odds.svg';
+import Circle from './icons/circle.svg';
+import Close from './icons/close.svg';
+import Coupon from './icons/coupon.svg';
+import Chat from './icons/chat.svg';
+import DangerWarning from './icons/danger-warning.svg';
+import DefSumm from './icons/def-summ.svg';
+import Delay from './icons/delay.svg';
+import Delete from './icons/delete.svg';
+import Deposit from'./icons/deposit.svg';
+import Desktop from'./icons/desktop.svg';
+import Done from'./icons/done.svg';
+import Email from'./icons/email.svg';
+import Face from './icons/face.svg';
+import Gift from './icons/gift.svg';
+import Heart from './icons/heart.svg';
+import Home from './icons/home.svg';
+import Info from './icons/info.svg';
+import Ios from './icons/ios.svg';
+import Logo from './icons/logo.svg';
+import Logout from './icons/logout.svg';
+import Lock from './icons/lock.svg';
+import Menu from './icons/menu.svg';
+import Mobile from './icons/mobile.svg';
+import MyAccount from './icons/my-account.svg';
+import MyStakes from './icons/my-stakes.svg';
+import Ok from './icons/ok.svg';
+import Pin from './icons/pin.svg';
+import Quick from './icons/quick.svg';
+import Reload from'./icons/reload.svg';
+import Search from './icons/search.svg';
+import Settings from './icons/settings.svg';
+import StarFilled from './icons/star-filled.svg';
+import StarOutline from'./icons/star-outline.svg';
+import Statement from './icons/statement.svg';
+
+import Text from './icons/text.svg';
+import Telegram from './icons/telegram.svg';
+import Video from './icons/video.svg';
+import Viber from './icons/viber.svg';
+import VisibleOff from './icons/visible-off.svg';
+import VisibleOn from './icons/visible-on.svg';
+import Warning from './icons/warning.svg';
+import Widget from './icons/widget.svg';
+import Withdraw from './icons/withdraw.svg';
+import FullScreen from './icons/full-screen.svg';
+import MinimizeScreen from './icons/minimize-screen.svg';
+import VideoPlay from './icons/video-play.svg';
+import VideoPause from './icons/video-pause.svg';
+import VideoReview from'./icons/video-review.svg';
+import RedCard from './icons/red-card.svg';
 
 export default {
   Android,
@@ -66,4 +65,8 @@ export default {
   ArrowLeft,
   ArrowRight,
   ArrowUp,
+  ArrowFull, ArrowMenu, Card, ChangeBase, ChangeOdds, Circle, Close, Coupon, Chat, DangerWarning, DefSumm, Delay, Delete,
+  Deposit, Desktop, Done, Email, Face, Gift,
+  Heart, Home, Info, Ios, Logo, Logout, Lock, Menu, Mobile, MyAccount, MyStakes, Ok, Pin, Quick, Reload, Search, Settings, StarFilled, StarOutline, Statement,
+  Text, Telegram, Video, Viber, VisibleOff, VisibleOn, Warning, Widget, Withdraw, FullScreen, MinimizeScreen, VideoPlay, VideoPause, VideoReview, RedCard
 };

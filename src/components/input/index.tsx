@@ -2,10 +2,7 @@ import React, { Component, SyntheticEvent, ChangeEvent, FocusEvent } from 'react
 import PropTypes from 'prop-types';
 import * as classNames from 'classnames/bind';
 
-// @ts-ignore
-import I18nHelper from 'core-ui__i18n/helper';
-// @ts-ignore
-import { isConstant } from 'lib-ui__helper';
+import I18n, { isConstant }  from 'core-ui__i18n';
 
 import { State,  GenericProps } from './types';
 import style from './style.pcss';
@@ -38,7 +35,7 @@ class Input<P extends GenericProps> extends Component<P, State> {
     cn = classNames.bind(style);
 
     getConstantTranslation: Function = (constant: string): string => {
-        return I18nHelper.getConstant(constant, this.context.store.getState(), this.context.container.transport);
+        return I18n.get(constant);
     };
 
     setValidityMessage: Function = (node: HTMLInputElement|HTMLTextAreaElement): void => {

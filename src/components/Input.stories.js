@@ -7,5 +7,5 @@ import FileInput from './file-input';
 storiesOf('Input', module)
   .addDecorator(withKnobs)
   .add('file input', () => {
-    return <FileInput />;
+    return <FileInput title={'Заголовок'} info={'Подпись'} name={'Name'}/>;
   });
